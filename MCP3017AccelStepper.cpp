@@ -9,7 +9,7 @@ MCP3017AccelStepper::MCP3017AccelStepper() {
 }
 
 
-MCP3017AccelStepper::MCP3017AccelStepper(uint8_t interface, uint8_t pin1, uint8_t pin2, uint8_t pin3, uint8_t pin4) : _accelStepper(interface, pin1, pin2, pin3, pin4) {
+MCP3017AccelStepper::MCP3017AccelStepper(uint8_t interface, uint8_t pin1, uint8_t pin2, uint8_t pin3, uint8_t pin4) : _accelStepper(interface, pin1, pin2, pin3, pin4, false) {
   _interface = interface;
   _currentPos = 0;
   _targetPos = 0;
